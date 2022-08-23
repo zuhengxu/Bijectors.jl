@@ -155,3 +155,5 @@ function ChainRulesCore.rrule(::typeof(_transform_inverse_ordered), x::AbstractM
 
     return y, _transform_inverse_ordered_adjoint
 end
+
+ChainRulesCore.@non_differentiable debug(::Any)
